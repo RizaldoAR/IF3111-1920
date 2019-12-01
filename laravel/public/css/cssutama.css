@@ -1,0 +1,31 @@
+h1{
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 75px;
+}
+.container{
+	width:400px;
+	height:200px;
+	padding:20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -220px;
+}
+.box{
+	
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+form{
+	margin: 50px auto;
+	width: 400px;
+
+	
+}
