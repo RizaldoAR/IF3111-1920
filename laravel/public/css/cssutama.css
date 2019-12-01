@@ -23,9 +23,35 @@ line-height: 75px;
 	vertical-align: middle;
 	
 }
+.buat{
+	text-align: center;
+	vertical-align: middle;
+	
+}
 form{
 	margin: 50px auto;
 	width: 400px;
 
 	
+}
+.garis{
+
+width: 1000px;
+height: 0px;
+left: 50px;
+top: 512px;
+margin-top: -30px;
+margin-left: 180px;
+border: 1px solid #000000;
+}
+.text{
+	text-align: left;
+	margin-top: -190px;
+	margin-left: -200px;
+	padding: 20px;
+}
+p{
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 180px;
 }
