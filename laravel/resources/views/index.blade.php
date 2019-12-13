@@ -6,6 +6,7 @@
 	<title></title>
 </head>
 <body>
+	<div class="header">
 	<h1>SIMPLE LAPOR!</h1>
 	<div class="container">
 		
@@ -19,8 +20,10 @@
 </div>
 </form>
 
+
 </div>
 
+</div>
 </div>
 <div class="recently">
 <p>Laporan/Komentar terakhir</p><br>
