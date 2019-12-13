@@ -14,11 +14,13 @@
 	<form>
   <input class="search" type="text" placeholder="Cari..." required>	
   <input class="button" type="button" value="Cari">
-  <div class ="buat">
-  <input class="button
-  " type="button" value="Buat Laporan/Komentar">
-</div>
+   <div class ="buat">
+  	</form>
+  	<form method="post" action="buat.blade.php">
+  <button type="submit">  Laporan/Komentar </button>
 </form>
+</div>
+
 
 
 </div>
