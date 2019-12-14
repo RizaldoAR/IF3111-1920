@@ -14,5 +14,15 @@
 
 
 
+
 Route::get('/', 'IndexController@index');
+Route::get('/reports/create', 'IndexController@create');
+Route::get('/reports/{report}', 'IndexController@show');
+Route::delete('/reports/{report}', 'IndexController@destroy');
+Route::post('/reports', 'IndexController@store');
+Route::get('/reports', 'IndexController@destroy');
+
+
+
+
 

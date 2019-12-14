@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\report;
 
-class IndexController extends Controller
+class DetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +13,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-       
-        $laporan = report::all();
-
-        return view('reports.Index',['laporan' => $laporan ]);
+        //
     }
 
     /**
@@ -28,7 +23,7 @@ class IndexController extends Controller
      */
     public function create()
     {
-        return view('reports.buat');
+        //
     }
 
     /**
@@ -39,16 +34,7 @@ class IndexController extends Controller
      */
     public function store(Request $request)
     {
-        $report = new Report;
-        $report->Laporan = $request->Laporan;
-        $report->Tipe = $request->Tipe;
-
-       
-
-        $report->save();
-
-        return redirect('/');
-
+        //
     }
 
     /**
@@ -57,10 +43,9 @@ class IndexController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(report $report)
+    public function show($id)
     {
-        return view ('reports.Detail', compact('report'));
-        
+        //
     }
 
     /**
@@ -92,10 +77,8 @@ class IndexController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(report $report)
+    public function destroy($id)
     {
-       report::destroy($report->id);
-       return redirect('/')->with('status', 'Laporan berhasil di hapus !');
-        
+        //
     }
 }

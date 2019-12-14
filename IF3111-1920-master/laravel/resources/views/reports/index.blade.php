@@ -17,7 +17,7 @@
   <input class="button" type="button" value="Cari">
   <div class ="buat">
   <input class="button
-  " type="button" value="Buat Laporan/Komentar">
+  " type="button"  value="Buat Laporan/Komentar" onclick="location.href='/reports/create';">
 </div>
 
 </form>
@@ -39,8 +39,8 @@
 </div>
 <div class="kumpulanlapor">
 	<div class="gambar">
-		<img src="views/bp.png" width="400">
-		<p>{{ $lpr->Date }} <a href="">Lihat selengkapnya>></a></p>
+		<img src="{{ asset ('img/imglaporan/' . $lpr->Gambar)}}" width="400" alt = "img">
+		<p>{{ $lpr->created_at }} <a href="/reports/{{ $lpr->id }}">Lihat selengkapnya>></a></p>
 	</div>
 	@endforeach
 	<div class="garislapor">
